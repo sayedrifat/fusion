@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    border-bottom: none;
+}
+/*----------------------------------------*/
+/*-----------Reusable Component-----------*/
+/*----------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+}
+p{
+    color:#c4c4c4;
+    font-family: 'Open Sans', sans-serif;
+}
+.headlineArea {
+    position: relative;
+    width: 100%;
+    height: 130px;
+}
+.headline:before{
+    content:'';
+    height: 100px;
+    width:5px;
+    background: #f7ac53;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.titleDiv{
+    color: #f7ac53;
+    font-size: 14px;
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    text-align: center;
+}
+.headingArea{
+    width: 746px;
+    text-align: center;
+    margin: 0 auto;
+    color:#c4c4c4;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.areaTitle{
+    color:#c4c4c4;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.moreLink{
+    color:#c4c4c4;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 1s;
+}
+.moreLink i{
+    font-size: 14px!important;
+    color: #f7ac53;
+    margin-left: 5px;
+    transition: 1s;
+}
+.moreLink:hover{
+    text-decoration: none;
+    color: #f7ac53;
+}
+.moreLink:hover i{
+    color: #c4c4c4;
+}
+/*----------------------------------------*/
+/*------------Header Part Start-----------*/
+/*----------------------------------------*/
+#headerArea{
+    background:url(../img/header.jpg);
+    height: 730px;
+    text-align:center;
+    overflow: hidden;
+}
+.bannerTitleDiv{
+    max-width: 695px;
+    min-height: 150px;
+    color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    padding: 50px 15px;
+    margin: auto;
+    margin-top: 116px;
+}
+.bannerTitle{
+    font-size: 55px;
+}
+.bTitleSpan{
+    color:#f7ac53;
+}
+.tagLine {
+    width: 230px;
+    margin: auto;
+    margin-top: 30px;
+}
+.bLinkItem{
+    max-width: 85px !important;
+    border-right: 2px solid #f7ac53;
+    padding: 0px 10px;
+    text-align: center;
+}
+.bLinkItem:last-child{
+    border:none;
+}
+.bLink{
+    color:#c4c4c4;
+    text-decoration: none;
+    transition:1s;
+}
+.bLink:hover{
+    color:#f7ac53;
+    text-decoration: none;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+.downArrow{
+    color:#f7ac53;
+    animation: arrowDown 3s infinite;
+    position: relative;
+    font-size: 20px;
+}
+.downArrow:hover{
+    color: #c4c4c4;
+}
+.logoDiv{
+    text-align: left;
+}
+.navbar-brand{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #f7ac53;
+    border-radius: 50%;
+    text-align: center;
+}
+.logo{
+    color: #f7ac53;
+    font-size: 14px;
+}
+.bannerBtnDiv{
+    text-align: right;
+}
+.bannerBtnLink{
+    text-decoration: none;
+}
+.bannerBtnLink:hover{
+    text-decoration: none;
+}
+@keyframes arrowDown{
+    from{top:0px;}
+    to{top:40px;}
+}
+/*----------------------------------------*/
+/*------------Header Part End-------------*/
+/*----------------------------------------*/
+/*-----------service Part Start-----------*/
+/*----------------------------------------*/
+#service{
+    background: #202020;
+    padding-bottom: 50px;
+}
+.serviceArea {
+    padding: 50px 0px;
+}
+.serviceBox1 {
+    padding: 10px 10px;
+}
+.serviceitem{
+    margin-top: 50px;
+}
+.serviceBox i{
+    color: #f7ac53;
+    font-size: 25px;
+}
+.serviceName{
+    color: #c4c4c4;
+    font-size: 30px;
+    padding: 20px 0px 10px 0;
+    transition: 1s;
+}
+.serviceBox p{
+    font-size: 14px;
+    padding-right: 20px;
+}
+.serviceBox a{
+    color: #c4c4c4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.serviceBox:hover .serviceName{
+    color:#f7ac53;
+}
+/*----------------------------------------*/
+/*------------service Part End------------*/
+/*----------------------------------------*/
+/*------------Branding Part Start------------*/
+/*----------------------------------------*/
+#branding{
+    background:#181818;
+    
+}
+.brandingTitle{
+    color: #f7ac53;
+    font-size: 14px;
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    text-align: center;
+}
+.brandingArea {
+    position: relative;
+    padding: 30px 0px 50px 0px;
+}
+.brandingHeadLine:before {
+    left: 0 !important;
+}
+.brandingTitle {
+    left: 0 !important;
+}
+.sliderdetails{
+    width: 200px;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+    text-align: right;
+}
+.sliderdetails a{
+    color:#c4c4c4;
+    text-decoration: none;
+    transition: 1s;
+}
+.sliderdetails a i{
+    color: #f7ac53;
+    transition: 1s;
+    margin-left: 5px;
+}
+.sliderdetails a:hover{
+    color: #f7ac53;
+    text-decoration: none;
+}
+.sliderdetails a:hover i{
+    color: #c4c4c4;
+}
+.sliderLine:before {
+    left: 85% !important;
+    top: 62%;
+}
+/*----------------------------------------*/
+/*------------Branding Part End-----------*/
+/*----------------------------------------*/
+/*------------Testomonial Part Start-----------*/
+/*----------------------------------------*/
+#testimonials{
+    background:#202020 ;
+}
+.clientLogo{
+    width: 110px;
+    height: auto;
+    margin: 10px 20px;
+}
+.ourClients {
+    margin-top: 40px;
+    padding: 0 0 50px 0;
+}
+/*----------------------------------------*/
+/*-----------Testimonials Start-----------*/
+.swiper-container {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+  }
+  .card-body{
+    background: #181818;
+    padding: 20px 15px;
+  }
+.quotes {
+    color: #b5b5b5;
+    display: block;
+    font-size: 17px;
+}
+.qImg {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.qName {
+    color: #f7ac53;
+    position: relative;
+    padding: 10px 0px 0 0;
+}
+.qName::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background: #b5b5b5;
+    top: 20px;
+    left: 22px;
+    display: block;
+}
+.qName::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background: #b5b5b5;
+    top: 20px;
+    right: 22px;
+    display: block;
+}
+.swiper-pagination{
+   opacity: 0;
+}
+/*----------------------------------------*/
+/*------------Testomonial Part End-----------*/
+/*----------------------------------------*/
+/*-----------Team Part Start-----------*/
+/*----------------------------------------*/
+#team{
+    background: #181818;
+}
+.memberRow{
+    padding: 15px 0px;
+}
+.teambox{
+position: relative;
+padding: 10px 0px;
+}
+.memberImg{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.memberImg img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.memberInfo{
+    text-align: center;
+    color: #c4c4c4;
+    margin-top: 15px;
+}
+.memberInfo h5{
+    font-size: 14px;
+    color: #feb960;
+    font-weight: 500;
+}
+.memberInfo p{
+    font-size: 13px;
+}
+.teamAbsoluteBox{
+position: relative;
+background: #333;
+display: block;
+}
+.teamAbsoluteDiv{
+    width: 255px;
+    height: 232px;
+    top: -10px;
+    left: 0;
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    opacity: 0;
+}
+.absoluteBox1{
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+.absoluteImg{
+    width: 70px;
+    height: 70px;
+    transform: rotate(90deg);
+}
+.absoluteImg img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.absoluteInfo{
+    color: #c4c4c4;
+    /* float: right; */
+    margin-left: 15px;
+    transform: rotate(90deg);
+    position: absolute;
+    width: 105px;
+    top: 106px;
+    left: -28px;
+}
+.absoluteInfo h5{
+    color: #feb960;
+    font-size:14px;
+}
+.absoluteInfo p{
+    font-size: 13px;
+}
+.absoluteBox2{
+    width: 165px;
+    position: absolute;
+    left: 80px;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+.teambox:hover .teamAbsoluteDiv{
+    opacity: 1;
+    transition: 0.5s;
+}
+/*----------------------------------------*/
+/*------------Team Part End-----------*/
+/*----------------------------------------*/
+/*-----------Contact Part Start-----------*/
+/*----------------------------------------*/
+#contact{
+    background: #343434;
+    border: none;
+}
+.contactForm{
+    background: #181818;
+    width:750px;
+    margin:auto;
+    padding:50px;
+}
+.formRow{
+    margin-bottom: 10px;
+}
+label{
+    width: 100%;
+    color: #f7ac53;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    outline: none;
+    padding: 5px 10px;
+}
+::placeholder{
+    color: #c4c4c4;
+}
+.errorMsg{
+    color:#f7ac53;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.contactBtn{
+    background: #feb960;
+    color: #343434;
+    padding: 10px 15px;
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: 1s;
+}
+.contactBtn:hover{
+    color: #feb960;
+    background: #343434;
+    text-decoration: none;
+}
+/*----------------------------------------*/
+/*------------Contact Part End------------*/
+/*----------------------------------------*/
+/*------------Footer Part Start------------*/
+/*----------------------------------------*/
+#footer{
+    background: #343434;
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    border: none;
+}
+.fLogo{
+    margin-left: 150px !important;
+    margin-top: 20px;
+}
+.fBox{
+    margin-bottom: 20px;
+}
+.fBox h4{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+.fBox p{
+    color: #c4c4c4;
+    font-size: 14px;
+    font-weight: 400;
+}
+.fBox a{
+    color: #c4c4c4;
+    text-decoration: none;
+}
+.fBox a:hover{
+    color: #feb960;
+    text-decoration: none;
+    transition: 1s;
+}
+.fIcon{
+    margin:0px 5px;
+}
+.copyright{
+    color: #c4c4c4;
+    text-align: center;
+}
+.designer{
+    color: #feb960;
+}
+/*----------------------------------------*/
+/*------------Footer Part End------------*/
+/*----------------------------------------*/
+/*------------Top Arrow Here------------*/
+/*----------------------------------------*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #feb960;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #fff;
+    color: #feb960;
+    transition: all 1s;
+  }
